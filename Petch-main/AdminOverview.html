@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    
+
+</head>
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <!-- <li><img src="image/A2.png" width="40" height="40" alt=""></li> -->
+              <li><a href="Admin.html" class="nav-link px-2 link-secondary">หน้าหลัก</a></li>
+              <li><a href="EventAdmin.html" class="nav-link px-2 link-dark">เพิ่มกิจกรรม</a></li>
+              <li><a href="AdminOverview.html" class="nav-link px-2 link-dark">ภาพรวมกิจกรรม</a></li>
+              <li><a href="student-list.html" class="nav-link px-2 link-secondary">รายชื่อนักศึกษา</a></li>
+              <li><a href="index.html" class="nav-link px-2 link-danger">ออกจากระบบ</a></li>
+              
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control" placeholder="เข้าร่วมกิจกรรม..." aria-label="Search">
+            </form>
+            
+          </div>
+        </div>
+      </header>
+    <div id="activity">
+        <h5>ภาพรวมกิจกรรม</h5>
+    </div>
+    <!-- สาขา -->
+    <div id="table" class="container  col-md-6 col-lg-6">
+        <table class="table table-hover gy-5 mt-1" >
+            <tr>
+                <th style="color: black;text-align: right;">ภาพรวมกิจกรรมของสาขา</th>
+                <td ></td>
+            </tr>
+            <tr>
+              <td >กิจกรรมทั้งหมด</td>
+              <td >25 กิจกรรม</td>
+          </tr>
+          <tr>
+            <td >ชั่วโมงทั้งหมด</td>
+            <td >25 ชั่วโมง</td>
+          </tr>
+          <tr>
+            <td >เครดิตทั้งหมด</td>
+            <td >25 </td>
+          </tr>
+
+
+        </table>
+        <table  class="table table-hover gy-5 mt-1">
+            <tr>
+                <th>ลำดับ</th>
+                <th>ชื่อ</th>
+                <th>จำนวนขั่วโมง</th>
+                <th>ประเภท</th>
+                <th>จำนวนที่่ได้รับ</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>xx</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+           
+            
+        </table>
+        
+       
+       <!-- Button trigger modal -->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <p style="color: rgb(231, 8, 8);">กิจกรรมทั้งหมด--></p>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">กิจกรรมทั้งหมดของสาขา</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <table  class="table table-hover gy-5 mt-1">
+                  <tr>
+                      <th>ลำดับ</th>
+                      <th>ชื่อ</th>
+                      <th>จำนวนขั่วโมง</th>
+                      <th>ประเภท</th>
+                      <th>จำนวนที่่ได้รับ</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                 
+                 
+                  
+              </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ย้อนกลับ</button>
+                <button type="button" class="btn"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- คณะ -->
+    <div id="tablegroup" class="container  col-md-6 col-lg-6 p-3">
+      <table class="table table-hover gy-5 mt-1" >
+        <tr>
+            <th style="color: #000;text-align: right;">ภาพรวมกิจกรรมของคณะ</th>
+            <td ></td>
+        </tr>
+        <tr>
+          <td >กิจกรรมทั้งหมด</td>
+          <td >25 กิจกรรม</td>
+      </tr>
+      <tr>
+        <td >ชั่วโมงทั้งหมด</td>
+        <td >25 ชั่วโมง</td>
+      </tr>
+      <tr>
+        <td >เครดิตทั้งหมด</td>
+        <td >25 </td>
+      </tr>
+
+
+    </table>
+    <table  class="table table-hover gy-5 mt-1">
+        <tr>
+            <th>ลำดับ</th>
+            <th>ชื่อ</th>
+            <th>จำนวนขั่วโมง</th>
+            <th>ประเภท</th>
+            <th>จำนวนที่่ได้รับ</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>xx</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>xx</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>xx</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>xx</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>xx</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>xx</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>xx</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>xx</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>xx</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>xx</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        
+        
+    </table>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalgroup">
+          <p style="color: rgb(231, 8, 8);">กิจกรรมทั้งหมด--></p>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalgroup" tabindex="-1" aria-labelledby="exampleModal1Labegroup" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalgroupLabel">กิจกรรมทั้งหมดของคณะ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <table  class="table table-hover gy-5 mt-1">
+                  <tr>
+                      <th>ลำดับ</th>
+                      <th>ชื่อ</th>
+                      <th>จำนวนขั่วโมง</th>
+                      <th>ประเภท</th>
+                      <th>จำนวนที่่ได้รับ</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>xx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                 
+                 
+                  
+              </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ย้อนกลับ</button>
+                <button type="button" class="btn"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</body>
+</html>
